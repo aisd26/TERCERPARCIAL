@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--este es el estilo-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" tyoe="text/css" href="footer.css">
+<!--este es el boostrap*-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.3/js/bootstrap.min.js"></script>
+<!--estos son los iconos de redes sociales-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.cdnfonts.com/css/aicho" rel="stylesheet">
+<title>Index</title>
+</head>
+<body>
+<!--esta linea es para la barra de los links-->
+    <div style="margin:24px;">
+        <nav class="navbar navbar-light" style="background-color: #e0e0e0;">
+           <div class="container">
+             <a class="navbar-brand" href="index.html">Inicio</a> 
+             <ul class="nav navbar-nav">
+               <li class="active">
+                 <a href="menu.html">Menu</a>
+               </li>
+               <li >
+                   <a href="formulario.html">Formulario</a>
+               </li>
+               <li>
+                   <a href="resultado.html">Resultado</a>    
+               </li>
+               <li>
+                   <a href="contacto.html">Contacto</a>
+               </li>  
+               <li>
+                   <a href="apimovie.html">Peliculas</a>
+               </li>    
+               <li>
+                   <a href="calculadorafisica.html">Fisica</a>
+               </li>    
+               <li>
+                   <a href="calculadora.html">Calculadora</a>
+               </li>    
+              </ul>
+           </div>
+         </nav>
+         <div style="position: relative;background-color: black; color: blue">    
+        <video autoplay muted preload loop>
+            <source src="C:\Users\3PY37LA_RS6\Desktop\Tareas Isa\apimovie" type="video/mp4">
+          </video>
+          <h1 class="titulo">Welcome</h1>
+         </div>
+         
+
+        
+         <!--aqui sigue el footer-->
+         <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h2>Contactame</h2>
+                        <p>Si estas interesado en contactarme,puedes hacerlo a traves de cualquiera de las siguientes redes sociales</p>
+                        <div class="contact-links">
+                            <a href="https://www.facebook.com/miperfil" target="blank"><i class ="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/miperfil" target="blank"><i class ="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/miperfil" target="blank"><i class ="fab fa-twitter"></i></a>
+                            <a href="https://www.snapchat.com/miperfil" target="blank"><i class ="fab fa-snapchat"></i></a>
+                            <a href="https://www.youtube.com/miperfil" target="blank"><i class ="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    <script type="text/javascript">
+            //con lo siguiente hare que los links de las paginas se abran mediante Javascript en una pagina nueva
+    
+            const socialnetworks = document.querySelectorAll('.contac-links a');
+            socialnetworks.forEach(link =>{
+                link.addEventListener('click', e =>{
+                    e.preventDefault();
+                    window.open(link.href, '_blank')
+                });
+            });
+    </script>
+    </footer>
+</body>
+</html>
